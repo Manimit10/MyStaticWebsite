@@ -1,0 +1,137 @@
+/* Custom CSS */
+body {
+    background-color: orange;
+}
+
+/* nav bar decoration */
+.mynav {
+    background-image: linear-gradient(to right, red,yellow, orange);
+}
+.navbar-brand {
+    margin: 5px 5px 0px 5px;
+}
+.navbar-brand:hover {
+    transform: scale(1.2) !important;
+    transition: transform 1s ease-in-out !important;
+    
+}
+.mynav a {
+    margin-right: 30px ;
+    border-bottom: 2px solid transparent;
+}
+.mynav a:hover:not(.noline){
+    border-bottom: 2px solid #bd081c;
+}
+.active a{
+    border-bottom: 2px solid #bd081c;
+}
+#navbarNav{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+    margin-left: -70px !important;
+}
+/* End of nav bar decoration */
+/* fontawsome for social media logos*/
+.social-links-demo a {     
+    font-size: 42px;
+    margin: 5px 15px;
+    display: inline-block;
+    width: 20px !important;
+    height: 20px !important;
+    
+  }
+  .social-links-demo .fa-facebook { color: #3b5998 }
+  .social-links-demo .fa-twitter-square { color: #55acee;}
+  .social-links-demo .fa-google-plus-square { color: #dc4e41 }
+  .social-links-demo .fa-pinterest-square { color: #bd081c }
+  .social-links-demo .fa-envelope-square { color: #666 }
+  
+  /* End of fontawsome for social media logos*/
+
+  /* Crousel */
+  .slider{
+    overflow: hidden;
+}
+.slider figure{
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 20s slider infinite;
+}
+.slider figure img {
+	float: left;
+    width: 20%;
+    height: 700px;
+}
+
+@keyframes slider {
+	0% {
+		left: 0;
+	}
+	20% {
+		left: 0;
+	}
+	25% {
+		left: -100%;
+	}
+	45% {
+		left: -100%;
+	}
+	50% {
+		left: -200%;
+	}
+	70% {
+		left: -200%;
+	}
+	75% {
+		left: -300%;
+	}
+	95% {
+		left: -300%;
+	}
+	100% {
+		left: -400%;
+	}
+}
+  /* End of Crousel */
+  /* About Us 3 sections*/
+  /* Video Container*/
+  .video-container {
+    position: relative; 
+    padding-bottom: 56.25%; 
+    height: 0; 
+    overflow: hidden; 
+    max-width: 100%;
+  }
+  
+  .video-container iframe {
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%;
+  }
+  /* End About Us 3 sections*/
+  /*dropdown menu*/
+  .dropdown{
+      position: relative;
+      z-index: 10;
+  }
+  
+  .dropdown-content{
+      display: none;
+      position: absolute;
+      background-color: rgb(241, 224, 69);
+      
+      min-width: 35px;
+  }
+  .dropdown:hover .dropdown-content{
+      display: block;
+      
+  }
+  .noline{
+    list-style-type: none;
+    border-bottom: transparent !important;
+  }
+  /*end of dropdown menu*/
